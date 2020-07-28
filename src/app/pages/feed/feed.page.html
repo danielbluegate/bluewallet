@@ -1,0 +1,81 @@
+<ion-toolbar color="blue">
+  <ion-buttons slot="start">
+    <ion-menu-button auto-hide="false"></ion-menu-button>
+  </ion-buttons>
+  <ion-buttons slot="primary">
+    <ion-button>
+      <ion-icon slot="icon-only" name="time-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+
+  <ion-title>Wallet</ion-title>
+</ion-toolbar>
+
+<ion-content>
+  <ion-card class="card bg-primary shadow-soft border-light p-4">
+
+    <ion-card-content class="card-body bg-primary">
+      <div class="text-center">
+        <h3 class="h5 card-title">Total Balance <br> $ 220</h3>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="card bg-primary shadow-soft border-light">
+
+    <ion-card-content class="card-body bg-primary">
+      <div class="row">
+        <div class="col4" slot="start">
+          <ion-avatar>
+            <img src="./../../../assets/icon/eth.png" height="50px">
+          </ion-avatar>
+        </div>
+        <div class="col8">
+          <h3 class="h5 card-title">Ethereum</h3>
+          <h3 class="h5 card-title">0.00154 ETH</h3>
+        </div>
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="card bg-primary shadow-soft border-light">
+
+    <ion-card-content class="card-body bg-primary">
+      <div class="row">
+        <div class="col4" slot="start">
+          <ion-avatar>
+            <img src="./../../../assets/icon/logo.png" height="50px">
+          </ion-avatar>
+        </div>
+        <div class="col8">
+          <h3 class="h5 card-title">Madini</h3>
+          <h3 class="h5 card-title" id="tokenbal1"></h3>
+        </div>
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+
+<!-- <ion-item>
+  <ion-avatar slot="start">
+    <img src="./../../../assets/icon/eth.png">
+  </ion-avatar>
+  <ion-label>
+    <h3> Balance</h3>
+    <h3> 0.000124 ETH</h3>
+    <h3> 0.124 USD</h3>
+  </ion-label>
+</ion-item>
+
+<ion-item>
+  <ion-avatar slot="start">
+    <img src="./../../../assets/icon/mco.png">
+  </ion-avatar>
+  <ion-label>
+    <h3> Balance</h3>
+    <h3 id="tokenbal"></h3>
+  </ion-label>
+</ion-item> -->

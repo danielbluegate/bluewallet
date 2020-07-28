@@ -1,0 +1,8 @@
+{
+  "name": "bluewallet",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "b719d7f1"
+}

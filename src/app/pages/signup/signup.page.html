@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Signup Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="card bg-primary shadow-soft border-light p-4">
+    <div class="center" style="text-align: center;">
+      <ion-card-header>
+        <app-logo></app-logo>
+        <ion-card-subtitle>Signup </ion-card-subtitle>
+      </ion-card-header>
+    </div>
+  
+    <ion-card-content class="card-body bg-primary">
+      <form>
+        <ion-list class="bg-primary">
+          <div class="form-group">
+              <div class="input-group mb-4">
+                  <div class="input-group-prepend">
+                      <span class="input-group-text"><ion-icon name="mail-outline"></ion-icon></span>
+                  </div>
+                  <ion-input class="form-control" placeholder="Full Name" type="text" aria-label="Full name"></ion-input>
+              </div>
+          </div>
+
+          <div class="form-group">
+              <div class="input-group mb-4">
+                  <div class="input-group-prepend">
+                      <span class="input-group-text"><ion-icon name="mail-outline"></ion-icon></span>
+                  </div>
+                  <ion-input class="form-control" placeholder="Username" type="text" aria-label="username"></ion-input>
+              </div>
+          </div>
+
+          <div class="form-group">
+              <div class="input-group mb-4">
+                  <div class="input-group-prepend">
+                      <span class="input-group-text"><ion-icon name="mail-outline"></ion-icon></span>
+                  </div>
+                  <ion-input class="form-control" placeholder="mail@mail.com" type="email" aria-label="email adress"></ion-input>
+              </div>
+          </div>
+
+          <div class="form-group">
+              <div class="input-group mb-4">
+                  <div class="input-group-prepend">
+                      <span class="input-group-text"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                  </div>
+                  <ion-input class="form-control" placeholder="your password" type="text" aria-label="password"></ion-input>
+              </div>
+          </div>
+
+          
+
+          <ion-button  class="btn btn-block btn-grey" (click)="navigatetohome()">Signup</ion-button>
+
+          <div class="bg-primary">
+            Already have an account? <a routerLink="../login">Login.</a>
+          </div>
+
+        </ion-list>
+      </form>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

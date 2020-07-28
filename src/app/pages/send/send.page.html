@@ -1,0 +1,67 @@
+<ion-toolbar color="blue">
+  <ion-buttons slot="start">
+    <ion-menu-button auto-hide="false"></ion-menu-button>
+  </ion-buttons>
+  <ion-buttons slot="primary">
+    <ion-button>
+      <ion-icon slot="icon-only" name="time-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+
+  <ion-title>Send Crypto</ion-title>
+</ion-toolbar>
+
+<ion-content >
+  <ion-card class="card bg-primary shadow-soft border-light">
+
+    <ion-card-content class="card-body bg-primary">
+      <div class="row">
+        <div class="col4" slot="start">
+          <ion-avatar>
+            <img src="./../../../assets/icon/eth.png" height="50px">
+          </ion-avatar>
+        </div>
+        <div class="col8">
+          <h3 class="h5 card-title">Madini token</h3>
+          <h3 class="h5 card-title" id="tokenbal"></h3>
+        </div>
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="card bg-primary shadow-soft border-light p-4">
+    <form>
+      <ion-list class="bg-primary">
+        <div class="form-group">
+            <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><ion-icon name="qr-code-outline"></ion-icon></span>
+                </div>
+                <ion-input class="form-control" placeholder="Receiver address" type="text" aria-label="Receiver address"></ion-input>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><ion-icon name="cash-outline"></ion-icon></span>
+                </div>
+                <ion-input class="form-control" placeholder="Amount" type="text" aria-label="text"></ion-input>
+            </div>
+        </div> 
+
+        <div class="form-group">
+          <div class="input-group mb-4">
+              <div class="input-group-prepend">
+                  <span class="input-group-text"><ion-icon name="construct-outline"></ion-icon></span>
+              </div>
+              <ion-input class="form-control" placeholder="Mining cost" type="text" aria-label="text"></ion-input>
+          </div>
+      </div> 
+
+        <ion-button  class="btn btn-block btn-grey" >Send</ion-button>
+
+      </ion-list>
+    </form>
+  </ion-card>
+</ion-content>
