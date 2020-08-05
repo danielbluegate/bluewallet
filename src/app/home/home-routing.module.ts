@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import { HomeGuard } from '../guards/home.guard';
 
 const routes: Routes = [
   {
     path: 'home',
     component: HomePage,
+    canActivate: [HomeGuard],
     children: [
       {
         path: 'feed',

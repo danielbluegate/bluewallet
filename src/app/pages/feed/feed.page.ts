@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-//declare function printResult();
-declare function tokenbalance();
+declare function feedtokenbalance();
 
 @Component({
   selector: 'app-feed',
@@ -13,8 +12,7 @@ export class FeedPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    //printResult();
-    tokenbalance();
+    feedtokenbalance();
   }
 
 }

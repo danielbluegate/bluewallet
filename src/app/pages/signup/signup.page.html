@@ -9,7 +9,7 @@
     <div class="center" style="text-align: center;">
       <ion-card-header>
         <app-logo></app-logo>
-        <ion-card-subtitle>Signup </ion-card-subtitle>
+        <ion-card-subtitle> Signup </ion-card-subtitle>
       </ion-card-header>
     </div>
   
@@ -21,7 +21,7 @@
                   <div class="input-group-prepend">
                       <span class="input-group-text"><ion-icon name="mail-outline"></ion-icon></span>
                   </div>
-                  <ion-input class="form-control" placeholder="Full Name" type="text" aria-label="Full name"></ion-input>
+                  <ion-input class="form-control" name="fullname" [(ngModel)]="postData.fullname" placeholder="Full Name" type="text" aria-label="Full name"></ion-input>
               </div>
           </div>
 
@@ -30,7 +30,7 @@
                   <div class="input-group-prepend">
                       <span class="input-group-text"><ion-icon name="mail-outline"></ion-icon></span>
                   </div>
-                  <ion-input class="form-control" placeholder="Username" type="text" aria-label="username"></ion-input>
+                  <ion-input class="form-control" name="username" [(ngModel)]="postData.username" placeholder="Username" type="text" aria-label="username"></ion-input>
               </div>
           </div>
 
@@ -39,7 +39,7 @@
                   <div class="input-group-prepend">
                       <span class="input-group-text"><ion-icon name="mail-outline"></ion-icon></span>
                   </div>
-                  <ion-input class="form-control" placeholder="mail@mail.com" type="email" aria-label="email adress"></ion-input>
+                  <ion-input class="form-control" name="email" [(ngModel)]="postData.email" placeholder="mail@mail.com" type="email" aria-label="email adress"></ion-input>
               </div>
           </div>
 
@@ -48,13 +48,11 @@
                   <div class="input-group-prepend">
                       <span class="input-group-text"><ion-icon name="lock-closed-outline"></ion-icon></span>
                   </div>
-                  <ion-input class="form-control" placeholder="your password" type="text" aria-label="password"></ion-input>
+                  <ion-input class="form-control" name="password" [(ngModel)]="postData.password" placeholder="your password" type="password" aria-label="password"></ion-input>
               </div>
-          </div>
+          </div>          
 
-          
-
-          <ion-button  class="btn btn-block btn-grey" (click)="navigatetohome()">Signup</ion-button>
+          <ion-button type="submit"  class="btn btn-block btn-grey" (click)="signupAction()">Signup</ion-button>
 
           <div class="bg-primary">
             Already have an account? <a routerLink="../login">Login.</a>

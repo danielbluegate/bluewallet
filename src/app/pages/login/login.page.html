@@ -21,7 +21,7 @@
                   <div class="input-group-prepend">
                       <span class="input-group-text"><ion-icon name="mail-outline"></ion-icon></span>
                   </div>
-                  <ion-input class="form-control" placeholder="mail@mail.com" type="email" aria-label="email adress"></ion-input>
+                  <ion-input class="form-control" name="username" placeholder="mail@mail.com" type="email" aria-label="email adress"  [(ngModel)]="postData.username" ></ion-input>
               </div>
           </div>
 
@@ -30,11 +30,11 @@
                   <div class="input-group-prepend">
                       <span class="input-group-text"><ion-icon name="lock-closed-outline"></ion-icon></span>
                   </div>
-                  <ion-input class="form-control" placeholder="your password" type="text" aria-label="password"></ion-input>
+                  <ion-input class="form-control" name="password" placeholder="your password" type="password" aria-label="password"  [(ngModel)]="postData.password"></ion-input>
               </div>
           </div>
 
-          <ion-button  class="btn btn-block btn-grey" (click)="navigatetohome()">Login</ion-button>
+          <ion-button type="submit" class="btn btn-block btn-grey" (click)="LoginAction()">Login</ion-button>
 
           <div class="bg-primary">
             Not registered? <a routerLink="../signup"> Create account.</a>
